@@ -1,0 +1,28 @@
+body {
+  background-image: url(../img/backgroundBlank.png);
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100%;
+}
+
+#logo {
+  width: 175px;
+}
+
+#header {
+  margin-left: 25px;
+  margin-right: 25px;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+
+#headerText {
+  color: #bababa;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 10px;
+}
