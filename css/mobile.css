@@ -95,6 +95,7 @@ body {
   height: 80vw;
   width: 100%;
   padding-top: 5vw;
+  padding-bottom: 5vw;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 3fr 1fr;
 }
@@ -196,6 +197,7 @@ body {
   margin-left: 15vw;
   margin-right: 15vw;
   text-align: center;
+  font-size: 2vw;
 }
 
 .aboutBox {
