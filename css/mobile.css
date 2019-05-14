@@ -172,6 +172,7 @@ body {
 #aboutGrid {
   width: 100%;
   padding-top: 5vw;
+  padding-bottom: 5vw;
 }
 
 #about {
@@ -205,4 +206,51 @@ body {
 .aboutBoxColumnGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+#contactsGrid {
+  background-color: #333333;
+  width: 100%;
+  padding-top: 5vw;
+  padding-bottom: 10vw;
+}
+
+#contact {
+  color: white;
+  font-size: 5vw;
+  text-align: center;
+}
+
+#contactText {
+  color: white;
+  text-align: center;
+  font-size: 2vw;
+  margin-left: 28vw;
+  margin-right: 28vw;
+}
+
+#contactInfoDiv {
+  background-color: #4f4f4f;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+#contactSpace {
+  height: 1vw;
+}
+
+.contactInfo {
+  color: white;
+  text-align: center;
+  font-size: 2vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+#contactNumber {
+  margin-top: -0.5vw;
+  font-weight: bolder;
+  font-size: 3vw;
 }
