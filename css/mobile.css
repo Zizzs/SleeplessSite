@@ -4,6 +4,9 @@ body {
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 100%;
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 #logo {
@@ -24,18 +27,18 @@ body {
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+  margin-right: 5vw;
   font-size: 2vw;
 }
 
 #topTextGrid {
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.2fr 1fr 1fr 2fr;
 }
 
 #provenText {
   font-size: 4vw;
   color: white;
-  font-family: sans-serif;
   text-align: center;
   margin-top: -3.75vw;
 }
@@ -43,7 +46,6 @@ body {
 #developerText {
   font-size: 3vw;
   color: #1759a0;
-  font-family: sans-serif;
   text-align: center;
 }
 
@@ -61,7 +63,35 @@ body {
   color: #1759a0;
 }
 
-#servicesDescription {
-  font-size: 3vw;
+.servicesDescription {
+  font-size: 2vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
   text-align: center;
+}
+
+#iconGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.iconPics {
+  width: 10vw;
+}
+
+.iconBox {
+  padding-top: 5vw;
+  border: 1px solid #e8e8e8;
+  font-size: 2vw;
+  height: 25vw;
+  margin-bottom: 5vw;
+}
+
+#blueGrid {
+  background-color: #1759a0;
+  height: 500px;
+  width: 100%;
 }
