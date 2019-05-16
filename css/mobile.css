@@ -9,7 +9,7 @@ body {
   padding: 0px;
 }
 
-#logo {
+.logo {
   width: 25vw;
 }
 
@@ -18,6 +18,16 @@ body {
   margin-right: 2vw;
   display: grid;
   grid-template-columns: 6fr 6fr;
+}
+
+#headerFollow {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  display: none;
+  position: fixed;
+  top: 0px;
+  background-color: #1d1a21;
 }
 
 #headerText {
@@ -29,6 +39,22 @@ body {
   margin-bottom: auto;
   margin-right: 5vw;
   font-size: 2vw;
+}
+
+#headerTextFollow {
+  color: #bababa;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 5vw;
+  font-size: 2vw;
+}
+
+.followTextDivs {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #topTextGrid {
@@ -255,4 +281,12 @@ body {
   margin-top: -0.5vw;
   font-weight: bolder;
   font-size: 3vw;
+}
+
+.servicesLink:hover,
+.clientsLink:hover,
+.aboutLink:hover,
+.contactLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
