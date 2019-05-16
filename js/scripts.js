@@ -160,5 +160,8 @@ let rotateQuotes = function(array) {
       $("#testamonialCompany").fadeOut();
     }, 19000);
     currentIndex++;
+    if (currentIndex === array.length) {
+      currentIndex = 0;
+    }
   }, 20000);
 };
