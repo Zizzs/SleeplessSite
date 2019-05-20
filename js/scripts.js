@@ -1,13 +1,6 @@
 let testamonials = [
   {
     quote:
-      "As chief operating officer for a social game startup, we struggled to find quality engineering talent at affordable prices.  We had a few engineers experienced in game design, but no one able to tackle the server architectures we'd need to build a large scale social game.  Through a mutual contact we were introduced to Sleepless Software.  We found them to be responsible, cost effective and extremely good at solving the difficult engineering challenges we faced.  It was an excellent addition to our in-house staff and kept us moving forward at a critical time in our project.  I'd highly recommend them.",
-    name: "Matt Cupal",
-    title: "Chief Operating Officer",
-    company: "Funium LLC"
-  },
-  {
-    quote:
       "The Sleepless team truly is tireless.  After another development shop failed to meet its deadlines, the Sleepless team took over our project with a very short deadline.  Nevertheless, the entire team stayed responsive and productive for a month-long sprint to a successful application launch.  Together they produced a better product at a lower overall cost than our previous firm.",
     name: "Andrew Magliozzi",
     title: "Founder & President",
@@ -92,34 +85,48 @@ let testamonials = [
     name: "Jeanne M. Roy, MFT",
     title: "Executive Director",
     company: "Children's Advocacy Center, Pomona"
+  },
+  {
+    quote:
+      "As chief operating officer for a social game startup, we struggled to find quality engineering talent at affordable prices.  We had a few engineers experienced in game design, but no one able to tackle the server architectures we'd need to build a large scale social game.  Through a mutual contact we were introduced to Sleepless Software.  We found them to be responsible, cost effective and extremely good at solving the difficult engineering challenges we faced.  It was an excellent addition to our in-house staff and kept us moving forward at a critical time in our project.  I'd highly recommend them.",
+    name: "Matt Cupal",
+    title: "Chief Operating Officer",
+    company: "Funium LLC"
   }
 ];
 
 $(document).ready(function() {
   rotateQuotes(testamonials);
   $(".servicesLink").click(function() {
+    let servicePosition = $("#services").position();
+    servicePosition.top -= 105;
     $("html, body").animate(
       {
-        scrollTop: $("#pageOne").offset().top
+        scrollTop: servicePosition.top
       },
-      1000
+      750
     );
   });
   $(".clientsLink").click(function() {
+    let clientPosition = $("#blueGrid").position();
+    clientPosition.top -= 20;
+    console.log;
     $("html, body").animate(
       {
-        scrollTop: $("#pageTwo").offset().top
+        scrollTop: clientPosition.top
       },
-      1000
+      750
     );
   });
 
   $(".aboutLink").click(function() {
+    let aboutPosition = $("#about").position();
+    aboutPosition.top -= 105;
     $("html, body").animate(
       {
-        scrollTop: $("#pageThree").offset().top
+        scrollTop: aboutPosition.top
       },
-      1000
+      750
     );
   });
 
@@ -128,7 +135,16 @@ $(document).ready(function() {
       {
         scrollTop: $("#pageFour").offset().top
       },
-      1000
+      750
+    );
+  });
+
+  $("#headerTextLogo").click(function() {
+    $("html, body").animate(
+      {
+        scrollTop: $("#header").offset().top
+      },
+      750
     );
   });
 
@@ -158,10 +174,10 @@ let rotateQuotes = function(array) {
       $("#testamonialName").fadeOut();
       $("#testamonialTitle").fadeOut();
       $("#testamonialCompany").fadeOut();
-    }, 19000);
+    }, 9000);
     currentIndex++;
-    if (currentIndex === array.length) {
+    if (currentIndex === array.length - 1) {
       currentIndex = 0;
     }
-  }, 20000);
+  }, 10000);
 };
