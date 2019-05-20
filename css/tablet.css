@@ -1,10 +1,6 @@
-html {
-  font-size: 62.5%;
-}
-
 body {
   background-image: url(../img/backgroundBlankSmall.jpg);
-  width: 100vw;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 100%;
@@ -14,7 +10,7 @@ body {
 }
 
 .logo {
-  width: 13rem;
+  width: 25vw;
 }
 
 #header {
@@ -42,7 +38,7 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 5vw;
-  font-size: 1.2rem;
+  font-size: 2vw;
 }
 
 #headerTextFollow {
@@ -63,25 +59,23 @@ body {
 
 #topTextGrid {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: 2fr 1fr 1fr 0.2fr 1fr 1fr 2fr;
 }
 
 #provenText {
   font-size: 4vw;
   color: white;
   text-align: center;
-  margin-top: -2.5rem;
+  margin-top: -3.75vw;
 }
 
 #developerText {
-  margin-top: 6rem;
   font-size: 3vw;
   color: #1759a0;
   text-align: center;
 }
 
 .swirlDiv {
-  margin-top: 4rem;
   text-align: center;
 }
 
@@ -90,13 +84,13 @@ body {
 }
 
 #services {
-  font-size: 3rem;
+  font-size: 5vw;
   text-align: center;
   color: #1759a0;
 }
 
 .servicesDescription {
-  font-size: 1.25rem;
+  font-size: 2vw;
   margin-left: 15vw;
   margin-right: 15vw;
   text-align: center;
@@ -104,11 +98,10 @@ body {
 
 #iconGrid {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr;
   text-align: center;
   margin-left: 15vw;
   margin-right: 15vw;
-  margin-bottom: 5px;
 }
 
 .iconPics {
@@ -116,16 +109,16 @@ body {
 }
 
 .iconBox {
-  padding-top: 1rem;
+  padding-top: 5vw;
   border: 1px solid #e8e8e8;
-  font-size: 1.25rem;
+  font-size: 2vw;
   height: 25vw;
   margin-bottom: 5vw;
 }
 
 #blueGrid {
   background-color: #1759a0;
-  height: 85vh;
+  height: 80vw;
   width: 100%;
   padding-top: 5vw;
   padding-bottom: 5vw;
@@ -134,13 +127,13 @@ body {
 }
 
 #clientsTitle {
-  font-size: 3rem;
+  font-size: 5vw;
   color: white;
   text-align: center;
 }
 
 #clientsDescription {
-  font-size: 1.25rem;
+  font-size: 2vw;
   color: white;
   text-align: center;
   margin-top: -1vw;
@@ -162,12 +155,12 @@ body {
 }
 
 .clientIcon {
-  width: 3rem;
+  width: 5vw;
 }
 
 #clientDescriptionText {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5vw;
   color: white;
   margin-left: 12vw;
   margin-right: 12vw;
@@ -175,7 +168,7 @@ body {
 
 #testamonialDiv {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.75vw;
   font-style: italic;
   color: white;
   margin-top: 8vw;
@@ -185,7 +178,7 @@ body {
 
 #testamonialInfo {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.5vw;
   color: white;
 }
 
@@ -195,12 +188,12 @@ body {
 
 #testamonialTitle {
   margin-top: -1vw;
-  font-size: 1rem;
+  font-size: 1.25vw;
 }
 
 #testamonialCompany {
   margin-top: -1vw;
-  font-size: 1rem;
+  font-size: 1.25vw;
 }
 
 #aboutGrid {
@@ -211,13 +204,13 @@ body {
 
 #about {
   color: #1759a0;
-  font-size: 3rem;
+  font-size: 5vw;
   text-align: center;
 }
 
 #aboutText {
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 2vw;
   color: black;
   margin-left: 15vw;
   margin-right: 15vw;
@@ -225,12 +218,12 @@ body {
 
 #aboutBoxRowGrid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-row-gap: 1fr;
   margin-left: 15vw;
   margin-right: 15vw;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2vw;
 }
 
 .aboutBox {
@@ -240,6 +233,7 @@ body {
 
 .aboutBoxColumnGrid {
   display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 #contactsGrid {
@@ -251,14 +245,14 @@ body {
 
 #contact {
   color: white;
-  font-size: 3rem;
+  font-size: 5vw;
   text-align: center;
 }
 
 #contactText {
   color: white;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 2vw;
   margin-left: 28vw;
   margin-right: 28vw;
 }
@@ -278,7 +272,7 @@ body {
 .contactInfo {
   color: white;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 2vw;
   margin-left: 15vw;
   margin-right: 15vw;
 }
@@ -289,14 +283,6 @@ body {
   font-size: 3vw;
 }
 
-.clientsLink {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.aboutLink {
-  padding-right: 5px;
-}
 .servicesLink:hover,
 .clientsLink:hover,
 .aboutLink:hover,
