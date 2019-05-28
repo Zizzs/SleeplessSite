@@ -201,7 +201,7 @@ $(document).ready(function() {
         750
       );
     });
-  } else if (resolutionWidth > 1000) {
+  } else if (resolutionWidth > 1000 && resolutionWidth < 1200) {
     $(".servicesLink").click(function() {
       let servicePosition = $("#services").position();
       servicePosition.top -= 270;
@@ -227,6 +227,57 @@ $(document).ready(function() {
     $(".aboutLink").click(function() {
       let aboutPosition = $("#about").position();
       aboutPosition.top -= 275;
+      $("html, body").animate(
+        {
+          scrollTop: aboutPosition.top
+        },
+        750
+      );
+    });
+
+    $(".contactLink").click(function() {
+      $("html, body").animate(
+        {
+          scrollTop: $("#pageFour").offset().top
+        },
+        750
+      );
+    });
+
+    $("#headerTextLogo").click(function() {
+      $("html, body").animate(
+        {
+          scrollTop: $("#header").offset().top
+        },
+        750
+      );
+    });
+  } else if (resolutionWidth >= 1200) {
+    $(".servicesLink").click(function() {
+      let servicePosition = $("#services").position();
+      servicePosition.top -= 150;
+      $("html, body").animate(
+        {
+          scrollTop: servicePosition.top
+        },
+        750
+      );
+    });
+    $(".clientsLink").click(function() {
+      let clientPosition = $("#blueGrid").position();
+      clientPosition.top -= 10;
+      console.log;
+      $("html, body").animate(
+        {
+          scrollTop: clientPosition.top
+        },
+        750
+      );
+    });
+
+    $(".aboutLink").click(function() {
+      let aboutPosition = $("#about").position();
+      aboutPosition.top -= 150;
       $("html, body").animate(
         {
           scrollTop: aboutPosition.top
