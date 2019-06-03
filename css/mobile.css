@@ -103,7 +103,7 @@ body {
 }
 
 .servicesDescription {
-  font-size: 1.35rem;
+  font-size: 1.75rem;
   margin-left: 15vw;
   margin-right: 15vw;
   text-align: center;
@@ -127,14 +127,14 @@ body {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   border: 1px solid #e8e8e8;
-  font-size: 1.25rem;
-  height: 30vw;
+  font-size: 1.50rem;
+  height: 35vw;
   margin-bottom: 5vw;
 }
 
 #blueGrid {
   background-color: #1759a0;
-  height: 70rem;
+  height: 100rem;
   width: 100%;
   padding-top: 5vw;
   padding-bottom: 5vw;
@@ -149,7 +149,7 @@ body {
 }
 
 #clientsDescription {
-  font-size: 1.35rem;
+  font-size: 1.75rem;
   color: white;
   text-align: center;
   margin-top: -1vw;
@@ -176,7 +176,7 @@ body {
 
 #clientDescriptionText {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.50rem;
   color: white;
   margin-left: 12vw;
   margin-right: 12vw;
@@ -184,7 +184,7 @@ body {
 
 #testamonialDiv {
   text-align: center;
-  font-size: 1.15rem;
+  font-size: 1.50rem;
   font-style: italic;
   color: white;
   margin-top: 8vw;
@@ -194,7 +194,7 @@ body {
 
 #testamonialInfo {
   text-align: center;
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   color: white;
 }
 
@@ -226,7 +226,7 @@ body {
 
 #aboutText {
   text-align: left;
-  font-size: 1.35rem;
+  font-size: 1.75rem;
   color: black;
   margin-left: 15vw;
   margin-right: 15vw;
@@ -239,7 +239,7 @@ body {
   margin-left: 15vw;
   margin-right: 15vw;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .aboutBox {
@@ -267,7 +267,7 @@ body {
 #contactText {
   color: white;
   text-align: center;
-  font-size: 1.35rem;
+  font-size: 1.75rem;
   margin-left: 28vw;
   margin-right: 28vw;
 }
@@ -287,7 +287,7 @@ body {
 .contactInfo {
   color: white;
   text-align: center;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   margin-left: 15vw;
   margin-right: 15vw;
 }
