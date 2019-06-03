@@ -103,7 +103,7 @@ body {
 }
 
 .servicesDescription {
-  font-size: 3.25rem;
+  font-size: 4rem;
   margin-left: 15vw;
   margin-right: 15vw;
   text-align: center;
@@ -127,14 +127,14 @@ body {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   border: 1px solid #e8e8e8;
-  font-size: 3rem;
+  font-size: 3.5rem;
   height: 25vw;
   margin-bottom: 5vw;
 }
 
 #blueGrid {
   background-color: #1759a0;
-  height: 150rem;
+  height: 170rem;
   width: 100%;
   padding-top: 5vw;
   padding-bottom: 5vw;
@@ -149,7 +149,7 @@ body {
 }
 
 #clientsDescription {
-  font-size: 3.25rem;
+  font-size: 4rem;
   color: white;
   text-align: center;
   padding-left: 15vw;
@@ -175,7 +175,7 @@ body {
 
 #clientDescriptionText {
   text-align: center;
-  font-size: 2.75rem;
+  font-size: 3.25rem;
   color: white;
   margin-left: 12vw;
   margin-right: 12vw;
@@ -183,10 +183,10 @@ body {
 
 #testamonialDiv {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-style: italic;
   color: white;
-  margin-top: 8vw;
+  margin-top: 3vw;
   margin-left: 15vw;
   margin-right: 15vw;
 }
@@ -225,7 +225,7 @@ body {
 
 #aboutText {
   text-align: left;
-  font-size: 3.25rem;
+  font-size: 4rem;
   color: black;
   margin-left: 15vw;
   margin-right: 15vw;
@@ -238,7 +238,7 @@ body {
   margin-left: 15vw;
   margin-right: 15vw;
   text-align: center;
-  font-size: 2.75rem;
+  font-size: 3.25rem;
 }
 
 .aboutBox {
@@ -267,7 +267,7 @@ body {
 #contactText {
   color: white;
   text-align: center;
-  font-size: 2.75rem;
+  font-size: 4rem;
   margin-left: 28vw;
   margin-right: 28vw;
 }
@@ -287,7 +287,7 @@ body {
 .contactInfo {
   color: white;
   text-align: center;
-  font-size: 2.75rem;
+  font-size: 3.75rem;
   margin-left: 15vw;
   margin-right: 15vw;
 }
@@ -295,11 +295,11 @@ body {
 #contactNumber {
   margin-top: -0.5vw;
   font-weight: bolder;
-  font-size: 3vw;
+  font-size: 3.75vw;
 }
 
 .servicesLink {
-  padding-left: 3.5rem;
+  padding-left: 3.75rem;
 }
 
 .clientsLink {

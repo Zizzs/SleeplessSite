@@ -300,7 +300,7 @@ $(document).ready(function() {
         {
           scrollTop: $("#header").offset().top
         },
-        750
+        250
       );
     });
   }
