@@ -359,9 +359,9 @@ $(document).ready(function() {
   $(document).scroll(function() {
     let y = $(this).scrollTop();
     if (y > 100) {
-      $("#headerFollow").fadeIn();
+			$("#header").addClass('follow');
     } else {
-      $("#headerFollow").fadeOut();
+			$("#header").removeClass('follow');
     }
   });
 });
