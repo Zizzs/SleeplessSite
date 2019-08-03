@@ -95,276 +95,76 @@ let testamonials = [
   }
 ];
 
+let mobile_menu_is_open = false;
 $(document).ready(function() {
+
   rotateQuotes(testamonials);
   let resolutionWidth = window.screen.availWidth;
-  console.log(resolutionWidth);
-  if (resolutionWidth < 500) {
-    $(".servicesLink").click(function() {
-      let servicePosition = $("#services").position();
-      servicePosition.top -= 100;
-      $("html, body").animate(
-        {
-          scrollTop: servicePosition.top
-        },
-        750
-      );
-    });
-    $(".clientsLink").click(function() {
-      let clientPosition = $("#blueGrid").position();
-      clientPosition.top -= 25;
-      console.log;
-      $("html, body").animate(
-        {
-          scrollTop: clientPosition.top
-        },
-        750
-      );
-    });
 
-    $(".aboutLink").click(function() {
-      let aboutPosition = $("#about").position();
-      aboutPosition.top -= 105;
-      $("html, body").animate(
-        {
-          scrollTop: aboutPosition.top
-        },
-        750
-      );
-    });
-
-    $(".contactLink").click(function() {
-      $("html, body").animate(
-        {
-          scrollTop: $("#pageFour").offset().top
-        },
-        750
-      );
-    });
-
-    $("#headerTextLogo").click(function() {
-      $("html, body").animate(
-        {
-          scrollTop: $("#header").offset().top
-        },
-        750
-      );
-    });
-  } else if (resolutionWidth >= 500 && resolutionWidth < 750) {
-    $(".servicesLink").click(function() {
-      let servicePosition = $("#services").position();
-      servicePosition.top -= 105;
-      $("html, body").animate(
-        {
-          scrollTop: servicePosition.top
-        },
-        750
-      );
-    });
-    $(".clientsLink").click(function() {
-      let clientPosition = $("#blueGrid").position();
-      clientPosition.top -= 20;
-      console.log;
-      $("html, body").animate(
-        {
-          scrollTop: clientPosition.top
-        },
-        750
-      );
-    });
-
-    $(".aboutLink").click(function() {
-      let aboutPosition = $("#about").position();
-      aboutPosition.top -= 105;
-      $("html, body").animate(
-        {
-          scrollTop: aboutPosition.top
-        },
-        750
-      );
-    });
-
-    $(".contactLink").click(function() {
-      $("html, body").animate(
-        {
-          scrollTop: $("#pageFour").offset().top
-        },
-        750
-      );
-    });
-
-    $("#headerTextLogo").click(function() {
-      $("html, body").animate(
-        {
-          scrollTop: $("#header").offset().top
-        },
-        750
-      );
-    });
-  } else if (resolutionWidth >= 750 && resolutionWidth <= 999) {
-    $(".servicesLink").click(function() {
-      let servicePosition = $("#services").position();
-      servicePosition.top -= 200;
-      $("html, body").animate(
-        {
-          scrollTop: servicePosition.top
-        },
-        750
-      );
-    });
-    $(".clientsLink").click(function() {
-      let clientPosition = $("#blueGrid").position();
-      clientPosition.top -= 90;
-      console.log;
-      $("html, body").animate(
-        {
-          scrollTop: clientPosition.top
-        },
-        750
-      );
-    });
-
-    $(".aboutLink").click(function() {
-      let aboutPosition = $("#about").position();
-      aboutPosition.top -= 200;
-      $("html, body").animate(
-        {
-          scrollTop: aboutPosition.top
-        },
-        750
-      );
-    });
-
-    $(".contactLink").click(function() {
-      $("html, body").animate(
-        {
-          scrollTop: $("#pageFour").offset().top
-        },
-        750
-      );
-    });
-
-    $("#headerTextLogo").click(function() {
-      $("html, body").animate(
-        {
-          scrollTop: $("#header").offset().top
-        },
-        750
-      );
-    });
-  } else if (resolutionWidth > 1000 && resolutionWidth < 1200) {
-    $(".servicesLink").click(function() {
-      let servicePosition = $("#services").position();
-      servicePosition.top -= 270;
-      $("html, body").animate(
-        {
-          scrollTop: servicePosition.top
-        },
-        750
-      );
-    });
-    $(".clientsLink").click(function() {
-      let clientPosition = $("#blueGrid").position();
-      clientPosition.top -= 125;
-      console.log;
-      $("html, body").animate(
-        {
-          scrollTop: clientPosition.top
-        },
-        750
-      );
-    });
-
-    $(".aboutLink").click(function() {
-      let aboutPosition = $("#about").position();
-      aboutPosition.top -= 275;
-      $("html, body").animate(
-        {
-          scrollTop: aboutPosition.top
-        },
-        750
-      );
-    });
-
-    $(".contactLink").click(function() {
-      $("html, body").animate(
-        {
-          scrollTop: $("#pageFour").offset().top
-        },
-        750
-      );
-    });
-
-    $("#headerTextLogo").click(function() {
-      $("html, body").animate(
-        {
-          scrollTop: $("#header").offset().top
-        },
-        750
-      );
-    });
-  } else if (resolutionWidth >= 1200) {
-    $(".servicesLink").click(function() {
-      let servicePosition = $("#services").position();
-      servicePosition.top -= 150;
-      $("html, body").animate(
-        {
-          scrollTop: servicePosition.top
-        },
-        750
-      );
-    });
-    $(".clientsLink").click(function() {
-      let clientPosition = $("#blueGrid").position();
-      clientPosition.top -= 10;
-      console.log;
-      $("html, body").animate(
-        {
-          scrollTop: clientPosition.top
-        },
-        750
-      );
-    });
-
-    $(".aboutLink").click(function() {
-      let aboutPosition = $("#about").position();
-      aboutPosition.top -= 150;
-      $("html, body").animate(
-        {
-          scrollTop: aboutPosition.top
-        },
-        750
-      );
-    });
-
-    $(".contactLink").click(function() {
-      $("html, body").animate(
-        {
-          scrollTop: $("#pageFour").offset().top
-        },
-        750
-      );
-    });
-
-    $("#headerTextLogo").click(function() {
-      $("html, body").animate(
-        {
-          scrollTop: $("#header").offset().top
-        },
-        250
-      );
-    });
-  }
-
-  $(document).scroll(function() {
-    let y = $(this).scrollTop();
-    if (y > 100) {
-			$("#header").addClass('follow');
-    } else {
-			$("#header").removeClass('follow');
-    }
+  $(".scrollLink").click(e => {
+    e.preventDefault();
+    let target = $(e.target).data('target');
+    if(!target) return;
+    let clientPosition = $(`#${target}`).position().top; 
+    let header = document.querySelector('#header');
+    let headerHeight = header.getBoundingClientRect().height;
+    $("html, body").animate({
+      scrollTop: clientPosition - headerHeight > 0 ? clientPosition - headerHeight : 0
+    }, 350);
+    if(mobile_menu_is_open)
+      toggleMobileMenu();
   });
+
+  $('.menu_toggle').on('click', e => {
+      toggleMobileMenu();
+  })
+
+  stickyHeader();
 });
+
+function toggleMobileMenu(){
+    let header = document.querySelector('#header');
+    let headerHeight = header.getBoundingClientRect().height;
+    if(header.getBoundingClientRect().top <= 0){
+      $("#mobile_menu").animate({
+        top: "0px"
+      });
+      $("header").animate({
+        top: window.innerHeight - headerHeight + "px"
+      });
+      mobile_menu_is_open = true;
+      $('.menu_toggle').text('CLOSE');
+    } else {
+      $("#mobile_menu").animate({
+        top: "-100vh"
+      });
+      $("header").animate({
+        top: "0px"
+      });
+      $('.menu_toggle').text('MENU');
+      mobile_menu_is_open = false;
+    }
+}
+
+$(document).scroll(function() {
+    stickyHeader();
+    let header = document.querySelector('#header');
+    let headerHeight = header.getBoundingClientRect().height;
+    let headerOpaque = 100;
+    let scroll_top = $(this).scrollTop();
+    // rotate main logo
+    let rotation = Math.floor((scroll_top / (window.innerHeight  - headerHeight ) * 104));
+    $(header).css({
+      backgroundColor: `rgba(29,26,33, ${scroll_top/100 > headerOpaque ? 1 : scroll_top / 100})`
+    })
+    $('.logo').css({
+      transform: "rotate(" + rotation + "deg)"
+    })
+});
+
+function stickyHeader() {
+
+}
 
 let rotateQuotes = function(array) {
   let currentIndex = 0;

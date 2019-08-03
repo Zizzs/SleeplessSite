@@ -2,66 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sleepless Inc.</title>
     <link rel="icon" href="img/swirl.png">
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300"
-      rel="stylesheet"
-    />
-	<!--
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 300px)"
-      href="css/mobile.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 375px)"
-      href="css/mobileTwo.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 520px)"
-      href="css/midlineMobile.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 768px)"
-      href="css/tablet.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 1080px)"
-      href="css/modernMobile.css"
-    />
-	-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet"/>
     <link rel="stylesheet" href="css/desktop.css"/>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-
-    <title>Document</title>
+    <title>Sleepless Inc.</title>
   </head>
   <body>
-    <div id="mainBody">
-      <div id="header">
-				<div class="container">
-					<img class="logo" src="img/logo.png" />
-					<div id="headerText">
-							<p class="servicesLink">SERVICES</p>
-							<p class="clientsLink">CLIENTS</p>
-							<p class="aboutLink">ABOUT</p>
-							<p class="contactLink">CONTACT</p>
-					</div>
-				</div>
+
+    <nav id="mobile_menu">
+      <a class="scrollLink" data-target="services">SERVICES</a>
+      <a class="scrollLink" data-target="clients">CLIENTS</a>
+      <a class="scrollLink" data-target="aboutGrid">ABOUT</a>
+      <a class="scrollLink" data-target="contactsGrid">CONTACT</a>
+    </nav>
+    
+    <header id="header">
+      <div class="container">
+        <div id="logo_container">
+          <img class="logo scrollLink icon_l" data-target="mainBody" src="img/logo_blue.svg" />
+          <div class="flex flow-col">
+            <h1>SLEEPLESS</h1>
+            <span>SOFTWARE INC.</span>
+          </div>
+        </div>
+        <nav id="headerText">
+            <a class="scrollLink" data-target="services">SERVICES</a>
+            <a class="scrollLink" data-target="clients">CLIENTS</a>
+            <a class="scrollLink" data-target="aboutGrid">ABOUT</a>
+            <a class="scrollLink" data-target="contactsGrid">CONTACT</a>
+            <a class="scrollLink mobile menu_toggle">MENU</a>
+        </nav>
       </div>
+    </header>
+
+    <main id="mainBody">
       <div id="topTextGrid">
 				<h2 id="provenText">Quality. Reliable. Proven.</h2>
 				<img id="landing_image" src="img/ComputerImage.png" alt="Image that shows some of Sleepless Inc.'s work on various devices."/>
 				<p id="developerText">YOU'VE FOUND THE RIGHT DEVELOPERS</p>
-			</div>
-			<div id="services">
+      </div>
+      
+			<section id="services">
 				<img class="icon_m swirl" src="img/swirlDarker.png" />
 				<h2>Services</h2>
 				<p>
@@ -85,48 +74,27 @@
             </p>
           </div>
         </div>
-			</div>
-			<!--
-      </div>
-		<div id="blueGrid">
-				<img class="swirl" src="img/swirlDarker.png" />
-        <div>
-          <p id="clientsTitle">Clients</p>
-        </div>
-        <div id="clientsDescriptionDiv">
-          <p id="clientsDescription">
-            Out proven track record will make you a believer. Our clients know
-            how reliable we are and choose us because of it.
-          </p>
-        </div>
-        <div id="iconsGrid">
-          <div class="clientIconDiv">
+      </section>
+      
+      <section id="clients">
+				<img class="swirl icon_m" src="img/logo.svg" />
+        <h2 id="clientsTitle">Clients</h2>
+        <p>
+          Out proven track record will make you a believer.
+        </p>
+        <p>
+          Our clients know how reliable we are and choose us because of it.
+        </p>
+        <div id="clientsGrid">
             <img class="clientIcon" src="img/good.png" />
-          </div>
-          <div class="clientIconDiv">
             <img class="clientIcon" src="img/nationalGuard.png" />
-          </div>
-          <div class="clientIconDiv">
             <img class="clientIcon" src="img/semiLogic.png" />
-          </div>
-          <div class="clientIconDiv">
             <img class="clientIcon" src="img/stanford.png" />
-          </div>
-          <div class="clientIconDiv">
             <img class="clientIcon" src="img/ambr.png" />
-          </div>
-          <div class="clientIconDiv">
             <img class="clientIcon" src="img/EAGames.png" />
-          </div>
-          <div class="clientIconDiv">
             <img class="clientIcon" src="img/mattel.png" />
-          </div>
-          <div class="clientIconDiv">
             <img class="clientIcon" src="img/deloitte.png" />
-          </div>
-          <div class="clientIconDiv">
             <img class="clientIcon" src="img/epic.png" />
-          </div>
         </div>
         <div id="clientDescriptionText">
           <p>
@@ -161,10 +129,11 @@
           <p id="testamonialTitle">Chief Operating Officer</p>
           <p id="testamonialCompany">Funium LLC</p>
         </div>
-      </div>
-      <div id="aboutGrid">
+      </section>
+
+      <section id="aboutGrid">
         <div class="swirlDiv">
-          <img class="swirl" src="img/swirlDarker.png" />
+          <img class="swirl icon_m" src="img/swirlDarker.png" />
         </div>
         <div>
           <p id="about">About</p>
@@ -211,10 +180,11 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="contactsGrid">
+      </section>
+
+      <section id="contactsGrid">
         <div id="pageFour" class="swirlDiv">
-          <img class="swirl" src="img/swirlDarker.png" />
+          <img class="swirl icon_m" src="img/swirlDarker.png" />
         </div>
         <div id="contact">
           <p>Contact</p>
@@ -236,7 +206,8 @@
             <p id="contactNumber">(650)937-9328</p>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+
+    </main>
   </body>
 </html>
